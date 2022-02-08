@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Domino Score Board</title>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+
+      <div class="col ">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #222;">
+          <div class="container-fluid">
+            <a class="navbar-brand text-light"href="#">Domino Scoreboard</a>
+          </div>
+        </nav>
+      </div>
+  
+    </div>
+
+    <div class="row mt-2">
+      <div class="col 12">
+        
+        <div class="d-grid gap-2">
+          <button class="btn btn-secondary reset" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M2.5 10.5a8 8 0 1116 0 .75.75 0 001.5 0 9.5 9.5 0 10-9.5 9.5h10.94l-2.72 2.72a.75.75 0 101.06 1.06l3.735-3.735c.44-.439.44-1.151 0-1.59L19.78 14.72a.75.75 0 00-1.06 1.06l2.72 2.72H10.5a8 8 0 01-8-8z"></path></svg> Reset game.</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="hl mt-3"></div>
+
+    <div class="row">
+      <div class="col col-xs-12 col-sm-12 col-md-5">
+
+        <div class="input-group">
+          <p class="display-2 team0">Team #1</p>
+        </div>
+
+        <section class="position-relative">
+
+          <div class="card mb-3" style="max-width: 540px; background-color: #222; border:2px, 2px ,2px, 2px solid white;">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Total Score</h5>
+                  <hr>
+                  <h1 class="score justify-content-center score--0" style="font-size: 55px;">85</h1>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Turn's</h5>
+                  <hr>
+                  <p class="card-text turns--0">Turns</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </section>
+
+        <div class="d-grid gap-2 mt-5">
+
+          <div class="input-group mb-5">
+
+            <button class="btn btn-success btn--0" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12.75 7.75a.75.75 0 00-1.5 0v3.5h-3.5a.75.75 0 000 1.5h3.5v3.5a.75.75 0 001.5 0v-3.5h3.5a.75.75 0 000-1.5h-3.5v-3.5z"></path><path fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1119 0 9.5 9.5 0 01-19 0z"></path></svg></button>
+  
+            <input type="number" class="form-control point--0" placeholder="Add points" aria-label="Recipient's username" aria-describedby="button-addon2">
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!--Display Divider x-small-->
+      <div class="hl mt-3 mb-3 d-block d-sm-none "></div>
+      <!-- Display Divider small --> 
+      <div class="hl mt-3 mb-3 d-none d-sm-block d-md-none"></div> 
+      <!-- Display Divider medium --> 
+      <div class="col 2 d-none d-md-block d-lg-none"> <div class="vl"></div></div>
+      <!-- Display score Large--> 
+      <div class="col 2 d-none d-lg-block d-xl-none"> <div class="vl"></div></div>
+      <!-- Display score x-Large --> 
+      <div class="col 2 d-none d-xl-block d-xxl-none"> <div class="vl"></div></div>
+      <!-- Display score xxx-Large -->
+      <div class="col 2 d-none d-xxl-block"> <div class="vl"></div></div>
+
+      
+
+      <div class="col col-xs-12 col-sm-12 col-md-5">
+
+        <div class="input-group">
+          <p class="display-2 team1">Team #2</p>
+        </div>
+
+        <section class="position-relative">
+
+          <div class="card mb-3" style="max-width: 540px; background-color: #222; border:2px, 2px ,2px, 2px solid white;">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Total Score</h5>
+                  <hr>
+                  <h1 class="score justify-content-center score--1" style="font-size: 55px;">85</h1>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Turn's</h5>
+                  <hr>
+                  <p class="card-text turns--1">Turns</p>
+                </div>
+              </div>
+            </div>
+          </div>  
+
+        </section>
+
+        <div class="input-group mt-5">
+
+          <input type="number" class="form-control point--1"  placeholder="Add points" aria-label="Recipient's username" aria-describedby="button-addon2">
+
+          <button class="btn btn-success btn--1" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12.75 7.75a.75.75 0 00-1.5 0v3.5h-3.5a.75.75 0 000 1.5h3.5v3.5a.75.75 0 001.5 0v-3.5h3.5a.75.75 0 000-1.5h-3.5v-3.5z"></path><path fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1119 0 9.5 9.5 0 01-19 0z"></path></svg></button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/script.js"></script>
+  <script type="module" src="js/bootstrap.min.js"></script>
+  <script>
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+
+body{
+  font-family: 'Roboto Mono', monospace;
+  color: #eee;
+  background-color: #222;
+
+}
+
+.vl {
+  border-left: 6px solid white;
+  height: 430px;
+  position: absolute;
+  left: 50%;
+  top: 10;
+}
+
+.hl{
+  height: 6px;
+  border-width:0;
+  color: grey;
+  background-color: white;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.hidden{
+  display: none;
+}
+
+
+
+.winner{
+  color: rgb(67, 255, 105);
+}
+
+.losser{
+  color: rgb(238, 70, 70);
+}
